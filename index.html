@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Levantamento habitacional por iniciativa do Gabinete do Vereador Renato Póvoa, em Capão do Leão/RS.">
+  <title>Cadastro Habitacional | Capão do Leão</title>
+  <style>
+    :root {
+      --green: #174b38;
+      --green-dark: #103728;
+      --green-soft: #eaf2ed;
+      --ink: #17231d;
+      --muted: #5e6b63;
+      --paper: #ffffff;
+      --bg: #f3f6f3;
+      --line: #dce5de;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+    .topbar {
+      background: var(--green-dark);
+      color: #fff;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: .04em;
+    }
+    .wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      color: #fff;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      padding: 48px 0 42px;
+    }
+    .eyebrow {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #e2eee6;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 760px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      color: #e3eee7;
+      font-size: clamp(16px, 2.3vw, 19px);
+    }
+    .byline { margin-top: 22px; color: #d4e5da; font-size: 14px; }
+    main { padding: 28px 0 48px; }
+    .notice {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 4px solid #b58a38;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 22px;
+      color: #3d4942;
+      font-size: 14px;
+    }
+    .notice strong { color: var(--ink); }
+    .form-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(16,55,40,.06);
+    }
+    .form-heading {
+      padding: 20px 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .form-heading h2 { margin: 0 0 4px; font-size: 21px; }
+    .form-heading p { margin: 0; color: var(--muted); font-size: 14px; }
+    .iframe-wrap { padding: 8px; background: #fff; }
+    iframe {
+      display: block;
+      width: 100%;
+      min-height: 1900px;
+      border: 0;
+      background: #fff;
+    }
+    .fallback {
+      padding: 18px 22px 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      color: #fff;
+      background: var(--green);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button:hover { background: var(--green-dark); }
+    .privacy {
+      margin-top: 20px;
+      padding: 18px 20px;
+      border-radius: 12px;
+      background: var(--green-soft);
+      color: #34483b;
+      font-size: 13px;
+    }
+    footer {
+      padding: 22px 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 600px) {
+      header { padding: 36px 0 32px; }
+      main { padding-top: 18px; }
+      .form-heading { padding: 17px; }
+      .iframe-wrap { padding: 0; }
+      iframe { min-height: 2050px; }
+      .notice { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">CAPÃO DO LEÃO · RIO GRANDE DO SUL</div>
+
+  <header>
+    <div class="wrap">
+      <span class="eyebrow">Levantamento habitacional</span>
+      <h1>Cadastro Habitacional<br>de Capão do Leão</h1>
+      <p class="lead">
+        Um levantamento para conhecer melhor a realidade das famílias e
+        das condições de moradia no município.
+      </p>
+      <p class="byline">Iniciativa do Gabinete do Vereador Renato Póvoa</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="notice">
+      <strong>Importante:</strong> este levantamento é uma iniciativa do
+      Gabinete do Vereador Renato Póvoa. O preenchimento não constitui inscrição
+      em programa habitacional, não garante a concessão de benefício ou moradia
+      e não substitui eventual cadastro oficial da Prefeitura Municipal.
+    </div>
+
+    <section class="form-card" aria-labelledby="form-title">
+      <div class="form-heading">
+        <h2 id="form-title">Preencha seu cadastro</h2>
+        <p>Responda às perguntas com atenção. Os campos e o envio são gerenciados pelo Google Forms.</p>
+      </div>
+
+      <div class="iframe-wrap">
+        <iframe
+          title="Formulário de Cadastro Habitacional"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeVms6JJ6A2utI_DfgBtmMRryoi6BuOZdYOPgBECOec6o7xIg/viewform?embedded=true"
+          loading="lazy">
+          Carregando formulário…
+        </iframe>
+      </div>
+
+      <div class="fallback">
+        Se o formulário não aparecer corretamente, abra-o diretamente:
+        <br>
+        <a class="button" href="https://forms.gle/qxKvVJnqkoY7qELS9" target="_blank" rel="noopener noreferrer">Abrir formulário</a>
+      </div>
+    </section>
+
+    <div class="privacy">
+      <strong>Sobre as informações:</strong> o formulário solicita dados pessoais
+      e informações familiares para fins de levantamento habitacional. Antes de
+      divulgar o cadastro, o responsável pela iniciativa deve disponibilizar
+      aviso de privacidade com a identificação do responsável pelo tratamento,
+      finalidade, base legal, compartilhamentos, prazo de conservação e canal
+      para exercício dos direitos dos titulares. O acesso às respostas deve
+      permanecer restrito às pessoas autorizadas.
+    </div>
+  </main>
+
+  <footer>
+    Cadastro Habitacional · Iniciativa do Gabinete do Vereador Renato Póvoa · Capão do Leão/RS
+  </footer>
+</body>
+</html>
